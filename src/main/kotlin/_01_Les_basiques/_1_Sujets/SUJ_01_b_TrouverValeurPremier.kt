@@ -19,7 +19,15 @@ import _10_Demos_et_tests.testerEnLot
  */
 
 fun findFirstValue(value: Number, list: List<Number>): Int {
-    // A COMPLETER ICI
+    var indice = 0
+    var nb = list[indice]
+    for (i in 0..list.size - 1) {
+        if (list[i].toInt() > nb.toInt()) {
+            nb = list[i]
+            indice = i
+            println(indice)
+        }
+    }
     return -1
 }
 
