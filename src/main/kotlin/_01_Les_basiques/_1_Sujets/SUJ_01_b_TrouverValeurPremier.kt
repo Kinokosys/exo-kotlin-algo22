@@ -19,13 +19,9 @@ import _10_Demos_et_tests.testerEnLot
  */
 
 fun findFirstValue(value: Number, list: List<Number>): Int {
-    var indice = 0
-    var nb = list[indice]
     for (i in 0..list.size - 1) {
-        if (list[i].toInt() > nb.toInt()) {
-            nb = list[i]
-            indice = i
-            println(indice)
+        if (list[i].toInt() == value.toInt()) {
+            return i
         }
     }
     return -1
@@ -46,6 +42,6 @@ val listDataTests_01b = listOf(dataTest01_01b , dataTest02_01b)
    --------------------------------*/
 
 fun main() {
-    testerEnLot(listDataTests_01b)
     demoEnLot(listDataTests_01b)
+    testerEnLot(listDataTests_01b)
 }
