@@ -19,7 +19,11 @@ import _10_Demos_et_tests.testerEnLot
  */
 fun findLastValue(value: Number, list: List<Number>): Int {
     var iVal = -1
-    // A COMPLETER ICI
+    for (i in 0..list.size - 1) {
+        if (list[i].toInt() == value.toInt()) {
+            iVal = i
+        }
+    }
     return iVal
 }
 
@@ -38,6 +42,7 @@ val listDataTests_01c = listOf(dataTest01_01c , dataTest02_01c)
    --------------------------------*/
 
 fun main() {
-    testerEnLot(listDataTests_01c)
     demoEnLot(listDataTests_01c)
+    testerEnLot(listDataTests_01c)
+
 }

@@ -18,7 +18,16 @@ import _10_Demos_et_tests.testerEnLot
  */
 fun moyennePonderee(listeCoefVal: List<List<Number>>): Double {
     var moyenne = 0.0
-    // A COMPLETER ICI
+    var somme = 0.0
+    var sommeCoef = 0.0
+    for (i in 0..listeCoefVal.size - 1) {
+            sommeCoef += i
+        for (j in listeCoefVal[i]) {
+
+        }
+
+    }
+    moyenne = somme / sommeCoef
     return moyenne
 }
 
@@ -36,7 +45,8 @@ val listDataTests_01e = listOf(dataTest01_01e , dataTest02_01e)
    --------------------------------*/
 
 fun main() {
-    testerEnLot(listDataTests_01e)
     demoEnLot(listDataTests_01e)
+    testerEnLot(listDataTests_01e)
+
 }
 
